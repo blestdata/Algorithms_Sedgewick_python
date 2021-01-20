@@ -1,6 +1,6 @@
 """
 ------------------------------------Exercise 1.5.1--------------------------------------------
-quickfind
+quick-find
 changing all pointing of one id towards another
 9-0 3-4 5-8 7-2 2-1 5-7 0-3 4-2.
 """
@@ -155,14 +155,28 @@ count   2
 
 """
 ------------------------------------Exercise 1.5.5--------------------------------------------
-quickfind algorithm on 10^9 sites and 10^6 pairs
+quick-find algorithm on 10^9 sites and 10^6 pairs
 on a machine capable of 10^9 instructions per second
 """
 
 """
 ------------------------------------Solution 1.5.5--------------------------------------------
-quickfind algorithm has constructor n, find complexity 1 and union complexity n
+quick-find algorithm has constructor n, find complexity 1 and union complexity n
 So for each pair, around 10^9 instructions are needed in worst case
-So 10^6*(10+2)*10^9/10^9[instructions per second]
-i.e. 1.2*10^7 seconds which is around 138 days
+So 10^6*(2+10*10^9)/10^9[instructions per second]
+i.e. ~1*10^7 seconds which is around 115 days
+"""
+
+"""
+------------------------------------Exercise 1.5.6--------------------------------------------
+Weighted Quick union algorithm on 10^9 sites and 10^6 pairs
+on a machine capable of 10^9 instructions per second
+"""
+
+"""
+------------------------------------Solution 1.5.6--------------------------------------------
+Weighted Quick union algorithm has constructor n, find complexity ~1 and union complexity ~1
+So for each pair, around 10^9 instructions are needed in worst case
+So 10^6*(10+2+1)/10^9[instructions per second]
+which is less than a second
 """
