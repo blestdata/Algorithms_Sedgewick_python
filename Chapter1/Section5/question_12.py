@@ -34,8 +34,10 @@ class QuickUnionPathCompression(UF):
         return True
 
     def printing(self):
+        print("-" * 40)
         print("index", [i for i in range(self.capacity)], sep=" ")
         print("array", self.id, sep=" ")
+        print("-" * 40)
         print(" ")
 
 if __name__ == "__main__":

@@ -35,10 +35,10 @@ class QuickFind(UF):
                     self.id[i] = q
 
     def printing(self):
-        print("-" * 20)
+        print("-" * 40)
         print("index", [i for i in range(self.capacity)], sep=" ")
         print("array", self.id, sep=" ")
-        print("-" * 20)
+        print("-" * 40)
         print(" ")
 
 class QuickUnion(UF):
@@ -63,15 +63,15 @@ class QuickUnion(UF):
 
         if pid == qid:
             return
-        self.id[p] = qid
+        self.id[pid] = qid
         self.count = self.count - 1
         return
 
     def printing(self):
-        print("-" * 20)
+        print("-" * 40)
         print("index", [i for i in range(self.capacity)], sep=" ")
         print("array", self.id, sep=" ")
-        print("-" * 20)
+        print("-" * 40)
         print(" ")
 
 class WeightedQuickUnion(UF):
@@ -106,10 +106,10 @@ class WeightedQuickUnion(UF):
         return
 
     def printing(self):
-        print("-" * 20)
+        print("-" * 40)
         print("index", [i for i in range(self.capacity)], sep=" ")
         print("array", self.id, sep=" ")
-        print("-" * 20)
+        print("-" * 40)
         print(" ")
 
 class WeightedQuickUnionPathCompression(UF):
@@ -144,8 +144,8 @@ class WeightedQuickUnionPathCompression(UF):
         return
 
     def printing(self):
-        print("-" * 20)
+        print("-" * 40)
         print("index", [i for i in range(self.capacity)], sep=" ")
         print("array", self.id, sep=" ")
-        print("-" * 20)
+        print("-" * 40)
         print(" ")
