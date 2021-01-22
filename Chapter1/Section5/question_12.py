@@ -36,6 +36,7 @@ class QuickUnionPathCompression(UF):
     def printing(self):
         print("index", [i for i in range(self.capacity)], sep=" ")
         print("array", self.id, sep=" ")
+        print(" ")
 
 if __name__ == "__main__":
     qupc = QuickUnionPathCompression(capacity=10)

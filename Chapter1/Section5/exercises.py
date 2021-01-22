@@ -186,6 +186,24 @@ array   9 7 7 9 3 7 6 7 5 7
 size    1 1 1 2 1 2 1 9 1 4
 count   2
 """
+# from UnionFind import WeightedQuickUnion
+# wqu = WeightedQuickUnion(capacity=10)
+# wqu.union(9, 0)
+# wqu.printing()
+# wqu.union(3, 4)
+# wqu.printing()
+# wqu.union(5, 8)
+# wqu.printing()
+# wqu.union(7, 2)
+# wqu.printing()
+# wqu.union(2, 1)
+# wqu.printing()
+# wqu.union(5, 7)
+# wqu.printing()
+# wqu.union(0, 3)
+# wqu.printing()
+# wqu.union(4, 2)
+# wqu.printing()
 
 """
 ------------------------------------Exercise 1.5.5--------------------------------------------
