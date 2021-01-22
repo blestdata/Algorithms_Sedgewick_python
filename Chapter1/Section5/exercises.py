@@ -10,35 +10,35 @@ changing all pointing of one id towards another
 index   0 1 2 3 4 5 6 7 8 9
 array   0 1 2 3 4 5 6 7 8 9
 
-on 9-0, 12 access
+on 9-0, 13 access
 index   0 1 2 3 4 5 6 7 8 9
 array   0 1 2 3 4 5 6 7 8 0
 
-on 3-4, 12 access
+on 3-4, 13 access
 index   0 1 2 3 4 5 6 7 8 9
 array   0 1 2 4 4 5 6 7 8 0
 
-on 5-8, 12 access
+on 5-8, 13 access
 index   0 1 2 3 4 5 6 7 8 9
 array   0 1 2 4 4 8 6 7 8 0
 
-on 7-2, 12 access
+on 7-2, 13 access
 index   0 1 2 3 4 5 6 7 8 9
 array   0 1 2 4 4 8 6 2 8 0
 
-on 2-1, 12 access
+on 2-1, 14 access
 index   0 1 2 3 4 5 6 7 8 9
 array   0 1 1 4 4 8 6 1 8 0
 
-on 5-7, 12 access
+on 5-7, 14 access
 index   0 1 2 3 4 5 6 7 8 9
 array   0 1 1 4 4 1 6 1 1 0
 
-on 0-3, 12 access
+on 0-3, 14 access
 index   0 1 2 3 4 5 6 7 8 9
 array   4 1 1 4 4 1 6 1 1 4
 
-on 4-2, 12 access
+on 4-2, 16 access
 index   0 1 2 3 4 5 6 7 8 9
 array   1 1 1 1 1 1 6 1 1 1
 """
@@ -76,15 +76,15 @@ on 2-1, 3 access
 index   0 1 2 3 4 5 6 7 8 9
 array   0 1 1 4 4 8 6 2 8 0
 
-on 5-7, 6 access
+on 5-7, 9 access
 index   0 1 2 3 4 5 6 7 8 9
 array   0 1 1 4 4 8 6 2 1 0
 
-on 0-3, 4 access
+on 0-3, 5 access
 index   0 1 2 3 4 5 6 7 8 9
 array   4 1 1 4 4 8 6 2 1 0
 
-on 4-2, 4 access
+on 4-2, 5 access
 index   0 1 2 3 4 5 6 7 8 9
 array   4 1 1 4 1 8 6 2 1 0
 """
@@ -104,49 +104,49 @@ array   0 1 2 3 4 5 6 7 8 9
 size    1 1 1 1 1 1 1 1 1 1
 count   10
 
-on 9-0, 6 access
+on 9-0, 8 access
 index   0 1 2 3 4 5 6 7 8 9
 array   9 1 2 3 4 5 6 7 8 9
 size    1 1 1 1 1 1 1 1 1 2
 count   9
 
-on 3-4, 6 access
+on 3-4, 8 access
 index   0 1 2 3 4 5 6 7 8 9
 array   9 1 2 3 3 5 6 7 8 9
 size    1 1 1 2 1 1 1 1 1 2
 count   8
 
-on 5-8, 6 access
+on 5-8, 8 access
 index   0 1 2 3 4 5 6 7 8 9
 array   9 1 2 3 3 5 6 7 5 9
 size    1 1 1 2 1 2 1 1 1 2
 count   7
 
-on 7-2, 6 access
+on 7-2, 8 access
 index   0 1 2 3 4 5 6 7 8 9
 array   9 1 7 3 3 5 6 7 5 9
 size    1 1 1 2 1 2 1 2 1 2
 count   6
 
-on 2-1, 7 access
+on 2-1, 12 access
 index   0 1 2 3 4 5 6 7 8 9
 array   9 7 7 3 3 5 6 7 5 9
 size    1 1 1 2 1 2 1 3 1 2
 count   5
 
-on 5-7, 6 access
+on 5-7, 8 access
 index   0 1 2 3 4 5 6 7 8 9
 array   9 7 7 3 3 7 6 7 5 9
 size    1 1 1 2 1 2 1 5 1 2
 count   4
 
-on 0-3, 7 access
+on 0-3, 12 access
 index   0 1 2 3 4 5 6 7 8 9
 array   9 7 7 9 3 7 6 7 5 9
 size    1 1 1 2 1 2 1 5 1 4
 count   3
 
-on 4-2, 9 access
+on 4-2, 14 access
 index   0 1 2 3 4 5 6 7 8 9
 array   9 7 7 9 3 7 6 7 5 7
 size    1 1 1 2 1 2 1 9 1 4
