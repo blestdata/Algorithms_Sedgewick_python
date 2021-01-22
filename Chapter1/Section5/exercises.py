@@ -42,7 +42,24 @@ on 4-2, 16 access
 index   0 1 2 3 4 5 6 7 8 9
 array   1 1 1 1 1 1 6 1 1 1
 """
-
+# from UnionFind import QuickFind
+# qf = QuickFind(capacity=10)
+# qf.union(9, 0)
+# qf.printing()
+# qf.union(3, 4)
+# qf.printing()
+# qf.union(5, 8)
+# qf.printing()
+# qf.union(7, 2)
+# qf.printing()
+# qf.union(2, 1)
+# qf.printing()
+# qf.union(5, 7)
+# qf.printing()
+# qf.union(0, 3)
+# qf.printing()
+# qf.union(4, 2)
+# qf.printing()
 
 """
 ------------------------------------Exercise 1.5.2--------------------------------------------

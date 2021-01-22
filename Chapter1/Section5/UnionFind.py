@@ -20,6 +20,7 @@ class QuickFind(UF):
 
     def __init__(self, capacity):
         self.id = [i for i in range(capacity)]
+        self.capacity = capacity
 
     def connected(self, v, w):
         return self.id[v] == self.id[w]
@@ -32,6 +33,10 @@ class QuickFind(UF):
             for i in range(len(self.id)):
                 if self.id[i] == p:
                     self.id[i] = q
+
+    def printing(self):
+        print("index", [i for i in range(self.capacity)], sep=" ")
+        print("array", self.id, sep=" ")
 
 class QuickUnion(UF):
     id = None
