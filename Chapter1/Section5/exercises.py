@@ -180,3 +180,13 @@ So for each pair, around 10^9 instructions are needed in worst case
 So 10^6*(10+2+1)/10^9[instructions per second]
 which is less than a second
 """
+
+"""
+------------------------------------Exercise 1.5.7--------------------------------------------
+Implement quick-union and quick-find
+"""
+
+"""
+------------------------------------Solution 1.5.7--------------------------------------------
+classes created in UnionFind.py
+"""
