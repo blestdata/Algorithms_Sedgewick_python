@@ -208,3 +208,25 @@ public void union(int p, int q)
 Here, even if two nodes are in the same component, it can assign them 
 as we are not looking for an unique identification for the whole component
 """
+
+"""
+------------------------------------Exercise 1.5.9--------------------------------------------
+why is this not possible for a weighted quick-union? or give a sequence of operations
+index   0 1 2 3 4 5 6 7 8 9
+array   1 1 3 1 5 6 1 3 4 5 
+"""
+
+"""
+------------------------------------Solution 1.5.9--------------------------------------------
+This is an unbalanced tree.
+             1
+      0    3      6
+          2  7       5
+                    9  4
+                         8
+assuming 0 is joined last, 
+if 3-2-7 is a component joined just before 0, the 1-6-5-4-8 chain would still not be possible in weighted quick union
+also assuming 0 is joined last and the component just before this was either 5-9-4-8 or 2 or 7,
+these components would still join with root and not where they are now
+"""
+
