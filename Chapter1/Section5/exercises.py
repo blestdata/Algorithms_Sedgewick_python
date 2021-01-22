@@ -105,24 +105,24 @@ on 4-2, 5 access
 index   0 1 2 3 4 5 6 7 8 9
 array   4 1 1 4 1 8 6 2 1 0
 """
-from UnionFind import QuickUnion
-qu = QuickUnion(capacity=10)
-qu.union(9, 0)
-qu.printing()
-qu.union(3, 4)
-qu.printing()
-qu.union(5, 8)
-qu.printing()
-qu.union(7, 2)
-qu.printing()
-qu.union(2, 1)
-qu.printing()
-qu.union(5, 7)
-qu.printing()
-qu.union(0, 3)
-qu.printing()
-qu.union(4, 2)
-qu.printing()
+# from UnionFind import QuickUnion
+# qu = QuickUnion(capacity=10)
+# qu.union(9, 0)
+# qu.printing()
+# qu.union(3, 4)
+# qu.printing()
+# qu.union(5, 8)
+# qu.printing()
+# qu.union(7, 2)
+# qu.printing()
+# qu.union(2, 1)
+# qu.printing()
+# qu.union(5, 7)
+# qu.printing()
+# qu.union(0, 3)
+# qu.printing()
+# qu.union(4, 2)
+# qu.printing()
 
 """
 ------------------------------------Exercise 1.5.3--------------------------------------------
