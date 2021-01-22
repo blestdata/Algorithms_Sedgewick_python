@@ -190,3 +190,21 @@ Implement quick-union and quick-find
 ------------------------------------Solution 1.5.7--------------------------------------------
 classes created in UnionFind.py
 """
+
+"""
+------------------------------------Exercise 1.5.8--------------------------------------------
+public void union(int p, int q)
+{
+    if (connected(p, q)) return;
+     // Rename p's component to q's name.
+       for (int i = 0; i < id.length; i++)
+           if (id[i] == id[p]) id[i] = id[q];
+       count--;
+}
+"""
+
+"""
+------------------------------------Solution 1.5.8--------------------------------------------
+Here, even if two nodes are in the same component, it can assign them 
+as we are not looking for an unique identification for the whole component
+"""
