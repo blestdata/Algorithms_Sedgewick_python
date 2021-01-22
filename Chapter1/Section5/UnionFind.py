@@ -1,6 +1,6 @@
-from abc import ABCMeta, abstractmethod
+from abc import ABCMeta, abstractmethod, ABC
 
-class UF(ABCMeta):
+class UF(ABC):
     __metaclass__ = ABCMeta
 
     @abstractmethod
@@ -11,9 +11,9 @@ class UF(ABCMeta):
     def connected(self, a, b):
         pass
 
-    @abstractmethod
-    def create(size):
-        pass
+    # @abstractmethod
+    # def create(size):
+    #     pass
 
 class QuickFind(UF):
     id = None
