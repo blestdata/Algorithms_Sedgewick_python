@@ -49,11 +49,72 @@ class QuickUnion(UF):
         return self.root(p) == self.root(q)
 
     def union(self, p, q):
-        p = self.root(p)
-        q = self.root(q)
+        pid = self.root(p)
+        qid = self.root(q)
 
-        if p == q:
+        if pid == qid:
             return
-        self.id[p] = q
+        self.id[p] = qid
+        self.count = self.count - 1
+        return
+
+class WeightedQuickUnion(UF):
+    id = None
+    size = None
+
+    def __init__(self, capacity):
+        self.id = [i for i in range(capacity)]
+        self.size = [1 for i in range(capacity)]
+        self.count = capacity
+
+    def root(self, p):
+        while p != self.id[p]:
+            p = self.id[p]
+        return p
+
+    def connected(self, p, q):
+        return self.root(p) == self.root(q)
+
+    def union(self, p, q):
+        pid = self.root(p)
+        qid = self.root(q)
+
+        if self.size[pid] < self.size[qid]:
+            self.id[pid] = qid
+            self.size[qid] = self.size[qid] + self.size[pid]
+        else:
+            self.id[qid] = pid
+            self.size[pid] = self.size[pid] + self.size[qid]
+        self.count = self.count - 1
+        return
+
+class WeightedQuickUnionPathCompression(UF):
+    id = None
+    size = None
+
+    def __init__(self, capacity):
+        self.id = [i for i in range(capacity)]
+        self.size = [1 for i in range(capacity)]
+        self.count = capacity
+
+    def root(self, p):
+        while p != self.id[p]:
+            self.id[p] = self.id[self.id[p]]
+            p = self.id[p]
+        return p
+
+    def connected(self, p, q):
+        return self.root(p) == self.root(q)
+
+    def union(self, p, q):
+        pid = self.root(p)
+        qid = self.root(q)
+
+        if self.size[pid] < self.size[qid]:
+            self.id[pid] = qid
+            self.size[qid] = self.size[qid] + self.size[pid]
+        else:
+            self.id[qid] = pid
+            self.size[pid] = self.size[pid] + self.size[qid]
         self.count = self.count - 1
         return
